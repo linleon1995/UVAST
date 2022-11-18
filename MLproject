@@ -1,0 +1,14 @@
+name: UVAST
+
+conda_env: env.yaml
+
+entry_points:
+  main:
+    parameters:
+      dataset: string
+
+    command: "python run.py --use_cuda --save_args -r --dataset {dataset}"
+  # validate:
+  #   parameters:
+  #     data_file: path
+  #   command: "python validate.py {data_file}"
