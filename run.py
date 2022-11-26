@@ -192,6 +192,11 @@ def main(args):
         args.sample_rate = 1
         args.channel_masking_rate = 0.3
         args.split_segments_max_dur = 0.17
+    elif args.dataset == 'coffee_room':
+        args.num_classes = 6
+        args.sample_rate = 1
+        args.channel_masking_rate = 0.5
+        args.split_segments_max_dur = 0.17
 
     if args.seed:
         print('seed is set to {}'.format(args.seed))
